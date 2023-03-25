@@ -1,0 +1,377 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.navigation {
+  height: 50px;
+  background: #4e4e4e;
+  display: flex;
+  align-items: center;
+}
+
+.company {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.links-list {
+  display: none;
+}
+
+.header {
+  height: calc(100vh - 50px);
+  background-image: url("/assets/Tło\ sekcji.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shadow {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.bigger_txt {
+  margin-top: 178px;
+  max-width: 359px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #ffffff;
+}
+
+.smaller_txt {
+  max-width: 276px;
+  margin-top: 62.19px;
+  margin-bottom: 65.96px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.offer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 41px;
+  width: 164px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.specialists {
+  background: #f1f1f1;
+  padding: 50px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.specialist {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialist:nth-of-type(odd) .spec-img {
+  background-image: url("/assets/pexels-august-de-richelieu-4427610.jpg");
+}
+
+.specialist:nth-of-type(even) .spec-img {
+  background-image: url("/assets/pexels-edmond-dantès-4347368.jpg");
+}
+
+.spec-inf-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #152d41;
+  align-items: center;
+}
+
+.spec-img {
+  width: 197px;
+  height: 197px;
+  margin-bottom: 30px;
+  background-size: cover;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.name {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  align-self: flex-start;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: justify;
+}
+
+.offers {
+  background: #405d78;
+  padding: 50px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 63px;
+  justify-content: center;
+}
+
+.offer-title {
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.circle {
+  position: absolute;
+  width: 37.5px;
+  height: 37.5px;
+  background: #e07a64;
+  border-radius: 50%;
+  top: -18.75px;
+  left: -18.75px;
+}
+
+.offer-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 335px;
+  background: #f1f1f1;
+  transition: 0.5s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pgf {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.new-offer::after {
+  content: "\A (nowość)";
+  white-space: pre-wrap;
+}
+
+.footer .container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.footer {
+  height: 71px;
+  background: #4e4e4e;
+}
+.icons {
+  display: inline-block;
+}
+.txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.fa-brands.fa-instagram {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.fa-brands.fa-facebook {
+  color: #ffffff;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 96%;
+  }
+  .offer-box {
+    width: 275px;
+    height: 275px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    left: -15px;
+  }
+  .box {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+  .links-list {
+    margin-left: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+
+  .offer-btn:hover {
+    background: #ffffff;
+    color: black;
+  }
+
+  .bigger_txt {
+    max-width: 577px;
+    flex-wrap: nowrap;
+  }
+
+  .smaller_txt {
+    width: 276px;
+  }
+
+  .specialists {
+    height: calc(100vh - 100px);
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .specialist {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 50px 0;
+  }
+
+  .specialist:nth-of-type(odd) .spec-img {
+    margin-right: 50px;
+  }
+
+  .specialist:nth-of-type(even) .spec-img {
+    margin-left: 50px;
+  }
+
+  .specialist:nth-of-type(even) {
+    flex-direction: row-reverse;
+    margin-left: 50px;
+    text-align: right;
+  }
+
+  .spec-inf-wrapper {
+    width: 70%;
+  }
+
+  .spec-img {
+    width: 197px;
+    height: 197px;
+    background-size: cover;
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+
+  .offers {
+    height: calc(100vh - 100px);
+  }
+
+  .offer-title {
+    display: flex;
+    justify-content: left;
+  }
+
+  .offer-box {
+    width: 197px;
+    height: 197px;
+  }
+
+  .circle {
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: -11px;
+  }
+
+  .box {
+    grid-template-columns: auto auto auto;
+  }
+
+  .offer-box:hover {
+    transform: scale(1.05);
+  }
+}
