@@ -59,9 +59,6 @@ body {
   background-image: url("/assets/Tło\ sekcji.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .header .container {
@@ -77,20 +74,18 @@ body {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.bigger_txt {
+.bigger-txt {
   width: 577px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  display: flex;
-  align-items: center;
   color: #ffffff;
 }
 
-.smaller_txt {
-  margin-top: 62.19px;
-  margin-bottom: 65.96px;
+.smaller-txt {
+  margin-top: 62px;
+  margin-bottom: 66px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -122,7 +117,6 @@ body {
 
 .specialists {
   background: #f1f1f1;
-  height: calc(100vh - 100px);
   padding: 50px 0;
 }
 
@@ -143,8 +137,8 @@ body {
 
 .specialist:nth-of-type(even) {
   flex-direction: row-reverse;
-  margin-left: 50px;
   text-align: right;
+  margin-bottom: 0;
 }
 
 .spec-inf-wrapper {
@@ -160,8 +154,6 @@ body {
   font-size: 36px;
   line-height: 42px;
   color: #152d41;
-  display: flex;
-  align-items: center;
 }
 
 .spec-img {
@@ -190,7 +182,6 @@ body {
 
 .offers {
   background: #405d78;
-  height: calc(100vh - 100px);
   padding: 50px 0;
 }
 
